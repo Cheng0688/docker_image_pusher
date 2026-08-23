@@ -57,7 +57,12 @@ jobs:
 
     - name: Build and push image Aliyun
       run: |
+        # 1. 登录 GHCR 解决拉取权限问题（使用 GitHub 自动提供的免费凭证）
+        echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
+
+        # 2. 登录阿里云 ACR 仓库
         docker login -u $ALIYUN_REGISTRY_USER -p $ALIYUN_REGISTRY_PASSWORD $ALIYUN_REGISTRY
+
         # 数据预处理,判断镜像是否重名
         declare -A duplicate_images
         declare -A temp_map
