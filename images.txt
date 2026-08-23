@@ -1,5 +1,4 @@
 #nginx
-#k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 #xhofe/alist:latest
 #--platform=linux/arm64 xiaoyaliu/alist
 #portainer/portainer-ce
@@ -7,6 +6,6 @@
 #homeassistant/home-assistant:stable
 #linuxserver/qbittorrent
 #adguard/adguardhome
-#ghcr.io/jasonngop/moviepilot-v2:v2
-lscr.io/linuxserver/prowlarr:latest
-linuxserver/qbittorrent:latest
+ghcr.io/jasonngop/moviepilot:latest
+#lscr.io/linuxserver/prowlarr:latest
+#linuxserver/qbittorrent:latest
