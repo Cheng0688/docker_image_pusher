@@ -1,11 +1,12 @@
 nginx
-#支持私库
 k8s.gcr.io/kube-state-metrics/kube-state-metrics:v2.0.0
 xhofe/alist:latest
-#支持指定架构
 --platform=linux/arm64 xiaoyaliu/alist
 portainer/portainer-ce
-jellyfin/jellyfin
-homeassistant/home-assistant
+jellyfin/jellyfin:latest
+homeassistant/home-assistant:stable
 linuxserver/qbittorrent
 adguard/adguardhome
+ghcr.io/jasonngop/moviepilot-v2:latest
+lscr.io/linuxserver/prowlarr:latest
+linuxserver/qbittorrent:latest
