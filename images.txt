@@ -6,6 +6,6 @@
 #homeassistant/home-assistant:stable
 #linuxserver/qbittorrent
 #adguard/adguardhome
-ghcr.io/jasonngop/moviepilot:latest
+jasonngop/moviepilot:latest
 #lscr.io/linuxserver/prowlarr:latest
 #linuxserver/qbittorrent:latest
